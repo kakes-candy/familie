@@ -1,0 +1,16 @@
+{% extends 'app_core/base.html' %}
+
+{% block body_content%}
+<h1>Dit is de template voor profielen lijst</h1>
+<div>
+    <ul>
+        {% for profiel in profielen %}
+        <li>
+            <h3>{{profiel.naam}}</h3>
+            <span> {{profiel.geboortedatum}}</span>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+{%endblock body_content%}
