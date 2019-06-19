@@ -2,3 +2,5 @@
 .vscode
 .~lock*
 *.sqlite3
+.env
+notes.txt
